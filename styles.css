@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: azure;
+    margin: 0;
+    padding: 40px;
+    
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+video {
+    width: 100%;
+    border: 2px solid #DDD;
+    border-radius: 10px;
+    transform: scaleX(-1);
+}
+canvas {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid #DDD;
+    border-radius: 10px;
+    transform: scaleX(-1);
+}
+button {
+    margin-top: 40px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: aquamarine;
+    color: rgb(92, 89, 89);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.a {
+    background-color: rgb(255, 12, 12);
+    margin-right: 10px;
+}
+.b {
+    background-color: rgb(60, 255, 0);
+    margin-right: 10px;
+}
+.c {
+    background-color:gray;
+    margin-right: 10px;
+}
+.d {
+    margin-right: 10px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    position: relative;
+    width: calc(25% - 10px);
+}
+
+.gallery-item canvas {
+    width: 100%;
+    display: block;
+}
+
+.gallery-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* Botões de deletar individuais */
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+button.limparTudo { 
+    display: none;
+    background-color: #ff4444;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-top: 15px;
+}
+
+button.limparTudo i {
+    margin-right: 5px;
+}

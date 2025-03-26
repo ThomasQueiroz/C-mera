@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo para selfie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tire sua selfie</h1>
+        <video id="camera" autoplay></video>
+            <button id="capturar" class="d">Selfie</button>
+            <button id="filtro" class="c">Selfie com flitro cinza</button>
+            <button id="desativar" class="a">Desativar câmera</button>
+            <button id="ativar" class="b">Ativar câmera</button>
+        <div class="gallery"></div>
+        <div class="gallery-controls">
+            <button id="limparTudo" class="limparTudo"><i class="fas fa-trash-alt"></i>Limpar Todas as Fotos</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
