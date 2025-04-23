@@ -11,14 +11,21 @@
     <div class="container">
         <h1>Tire sua selfie</h1>
         <video id="camera" autoplay></video>
-            <button id="capturar" class="d">Selfie</button>
-            <button id="filtro" class="c">Selfie com flitro cinza</button>
-            <button id="desativar" class="a">Desativar câmera</button>
-            <button id="ativar" class="b">Ativar câmera</button>
+        <div class="button-group">
+            <button id="capturar" class="d"><i class="fas fa-camera"></i>Tirar Selfie</button>
+            <button id="filtro" class="c"><i class="fas fa-moon"></i>Filtro Cinza</button>
+            <button id="desativar" class="a"><i class="fas fa-video-slash"></i>Desativar</button>
+            <button id="ativar" class="b"><i class="fas fa-video"></i>Ativar</button>
+        </div>
         <div class="gallery"></div>
         <div class="gallery-controls">
-            <button id="limparTudo" class="limparTudo"><i class="fas fa-trash-alt"></i>Limpar Todas as Fotos</button>
+            <button id="limparTudo" class="limparTudo"><i class="fas fa-trash-alt"></i> Limpar Todas as Fotos</button>
         </div>
+    </div>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <canvas id="modalCanvas"></canvas>
+        <button id="downloadBtn" class="download-btn"><i class="fas fa-download"></i> Download</button>
     </div>
 </body>
 <script src="script.js"></script>
